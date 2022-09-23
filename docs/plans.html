@@ -42,8 +42,8 @@
 
                 <div class="plans-list">
 
-                    <a href="congratulations.html" class="plans-item">
-                        <div class="plans-item__content active">
+                    <div class="plans-item active">
+                        <div class="plans-item__content">
                             <div class="plans-item__wrapper">
                                 <div class="plans-item__content-row">
                                 <div class="price">
@@ -67,9 +67,9 @@
                         <div class="plans-item__total">
                             Total:  699 Mex$
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="try-again.html" class="plans-item">
+                    <div class="plans-item">
                         <div class="plans-item__content">
                             <div class="plans-item__wrapper">
                                 <div class="plans-item__content-row">
@@ -90,9 +90,9 @@
                         <div class="plans-item__total">
                             Total:  699 Mex$
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="congratulations.html" class="plans-item">
+                    <div class="plans-item">
                         <div class="plans-item__content">
                             <div class="plans-item__wrapper">
                                  <div class="plans-item__content-row">
@@ -113,7 +113,7 @@
                         <div class="plans-item__total">
                             Total:  699 Mex$
                         </div>
-                    </a>
+                    </div>
 
                 </div>
               
@@ -134,5 +134,15 @@
   
 
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 
+  <script>
+    $('.plans-item').click(function(){
+        $('.plans-item').removeClass('active');
+        $(this).addClass('active');
+    })
+  </script>
 </html>
