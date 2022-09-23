@@ -1,0 +1,220 @@
+@import "vars"
+@import "fonts"
+
+// ----start global style-----
+body 
+	font-family: 'DM Sans', sans-serif
+	font-weight: 400
+	background: #0129F8
+	font-size: 16px
+	color: #212439
+	//padding-bottom: 16px
+a:hover 
+	text-decoration: none
+.sub-title
+	text-align: center
+	font-size: 15px 
+	margin-bottom: 20px
+.button 
+	background: linear-gradient(88.09deg, #017DF8 3.93%, #8A14F5 98.12%)
+	border-radius: 8px
+	width: 100% 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	height: 56px 
+	color: #fff
+	cursor: pointer
+.underline 
+	text-decoration: underline
+.container 
+	max-width: 1140px
+	width: 100%
+	padding-left: 16px 
+	padding-right: 16px
+.bold 
+	font-weight: 700
+.main-page--home 
+	//background: url('../img/elipse.svg')
+	
+//------end global style-------
+
+//------start header style-----
+.header 	
+	color: #fff
+	font-size: 22.85px
+	line-height: 120%
+	position: relative
+	z-index: 2
+	
+	
+	.container 
+		position: relative
+		z-indax: 1
+		padding-top: 16px
+		padding-bottom: 8px
+.logo 
+	margin-bottom: 8px
+	display: block
+.header__title-yellow
+	color: $yellow
+	font-weight: 700
+.header__background	
+	position: absolute
+	right: 0 
+	top: 0
+//-------end header style--------
+
+//start white wrappper 
+.white-wrapper 
+	background: #fff
+	border-radius: 13px
+	min-height: calc(100vh - 145px)
+	padding: 30px 16px 80px 16px
+	position: relative
+	.button 
+		position: absolute 
+		bottom: 16px 
+		left: 50%
+		transform: translateX(-50%)
+		width: calc( 100% -  32px)
+.white-section__title 
+	color: $blue
+.white-wrapper__header 
+	margin-bottom: 20px
+.premium-item 
+	display: flex
+	align-items: center
+	font-weight: 500
+	padding: 7px
+.premium-item__text
+	margin-left: 16px
+.premium-item__icon
+	width: 28px 
+	height: 28px
+//end white wrapper
+
+//start plans style 
+.plans-item__total
+	font-size: 13px
+	color: #C6CFD7
+	margin-top: 6px
+.plans-item__content 
+	border: 1px solid #667B8A
+	border-radius: 10px
+	position: relative
+	
+	
+.plans-item__content-row 
+	display: flex
+	justify-content: space-between 
+	align-items: center
+	margin-bottom: 4px
+.plans-item
+	color: #253652
+	margin-bottom: 16px
+.plans-item:hover 
+	color: #253652
+.price 
+	font-size: 18px 
+	font-weight: 700
+.term 
+	font-weight: 500
+	font-size: 14px
+.old-price
+	color: #667B8A
+	text-decoration: line-through
+.plans-item__wrapper 
+	padding: 16px
+	height: 84px
+	border-radius: 8px
+
+.plans-item__content.active
+	background: #E4F1FF
+	background: linear-gradient(93.91deg, #017DF8 -248.87%, #8A14F5 97.66%)
+	padding: 2px
+	border: none
+	.plans-item__wrapper 
+		background: #E4F1FF
+.plans-item__label 
+	position: absolute 
+	bottom: 0 
+	right: 0
+	background: linear-gradient(93.91deg, #017DF8 -248.87%, #8A14F5 97.66%)
+	border-radius: 6px 0px 8px 0px
+	color: #fff
+	padding: 4px 15px
+	font-size: 14px
+//end plans style
+
+//start congratulations-modal style
+.congratulations-modal
+	background: #fff
+	position: absolute
+	top: 50% 
+	left: 50% 
+	transform: translateX(-50%) translateY(-50%)
+	width: 343px 
+	max-width: 98%
+	border-radius: 13px
+	padding: 48px 16px 18px 16px
+	text-align: center
+	z-index: 1
+.modal__title
+	font-size: 32px
+	font-weight: 700
+	margin-bottom: 16px
+.modal-sub-title
+	font-size: 18px 
+	color: $blue-text
+.button 
+	margin-top: 48px
+.button:hover 
+	color: #fff
+.main-page-congratulations
+	background-image: url('../img/bg.svg')
+	background-position: center
+	background-repeat: no-repeat
+	min-height: 100vh
+	position: relative
+	overflow: hidden
+	width: 100%
+	
+
+	
+.congratulations-modal__image
+	position: absolute
+	top: 0 
+	left: 50%
+	transform: translateX(-50%) translateY(-75%)
+	width: 100% 
+	overflow: hidden
+
+	img 
+		z-index: 8
+.congratulations-modal-elips-content
+	width: 676px
+	height: 676px
+	background: radial-gradient(25.3% 25.3% at 50% 50%, #01E9F8 0%, #0129F8 100%)
+	transform: translateY(-25%) 
+
+.congratulations-modal-elips
+	overflow: hidden
+	width: 100%
+	position: absolute
+	top: 0% 
+	left: 50%
+	transform: translateX(-50%)
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	
+
+
+
+//end congratulations modal style
+
+@import "media"
+
+
+ 
